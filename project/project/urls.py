@@ -20,7 +20,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-	path('home/', include('test_tailwind_app.urls')),
+	path('', include('test_tailwind_app.urls')),
     path('admin/', admin.site.urls),
 ]
 if(settings.DEBUG):
