@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/monkhaus/django_tailwindcss/ve"
+VIRTUAL_ENV="/home/monkhaus/Code/ryoki-root/ve"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

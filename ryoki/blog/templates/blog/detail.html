@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ post.title }}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+	<div class="grid grid-cols-3 gap-2">
+	  <div></div>
+	  <div class="justify-self-center font-mono ">{{ post.title }}</div>
+	  <div></div>
+	  <div><p></p></div>
+	  <div class="justify-self-center">{{ post.body }}</div>
+	  <div>
+	  <p><a href="{% url 'blog:post_edit' post.pk %}"><button class="px-4 py-1 text-sm text-blue-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">+ Edit Blog Post</button></a><p>
+	  <p><a href="{% url 'blog:post_delete' post.pk %}"><button class="px-4 py-1 text-sm text-blue-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">+ Delete Blog Post</button></a></p>
+	  </div>
+
+	</div>
+</body>
+</html>

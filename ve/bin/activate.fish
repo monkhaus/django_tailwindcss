@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/monkhaus/django_tailwindcss/ve"
+set -gx VIRTUAL_ENV "/home/monkhaus/Code/ryoki-root/ve"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
